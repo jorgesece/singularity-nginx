@@ -6,7 +6,6 @@ From: nginx:latest
      exec /usr/sbin/nginx
 
 %post
-
      echo "<h2>Nginx configured in port 8080.</h2>"
      sed -i 's/80/8080/g'  /etc/nginx/conf.d/default.conf
      echo "<h2>Create nginx</h2>"
